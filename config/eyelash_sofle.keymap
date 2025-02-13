@@ -47,6 +47,16 @@
         tap-ms = <30>;
     };
 
+    macros {
+        styl_to_nrml: styl_to_nrml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(G) &kp Q>;
+
+            label = "STYL_TO_NRML";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
