@@ -112,7 +112,7 @@ layers:
   - Sft+Ins
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - Ctl+F10
-  - RGB BRD
+  - '&sel_w_back'
   - Ctl+.
   - '&sel_w_fwd'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
