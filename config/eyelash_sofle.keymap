@@ -63,6 +63,64 @@
 
             label = "DEL_L";
         };
+
+        styl_to_note: styl_to_note {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(G) &kp W>;
+
+            label = "STYL_TO_NOTE";
+        };
+
+        styl_to_code: styl_to_code {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(G) &kp E>;
+
+            label = "STYL_TO_CODE";
+        };
+
+        styl_to_hi_light: styl_to_hi_light {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(G) &kp R>;
+
+            label = "STYL_TO_HI_LIGHT";
+        };
+
+        fnt_to_code: fnt_to_code {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_ALT &kp H &kp F &kp F &kp C &kp O &kp U &kp R &kp ENTER>;
+
+            label = "FNT_TO_CODE";
+        };
+
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(X)>;
+
+            label = "CUT";
+        };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(INSERT)>;
+
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(INSERT)>;
+
+            label = "PASTE";
+        };
     };
 
     keymap {
