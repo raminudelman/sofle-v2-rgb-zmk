@@ -121,6 +121,86 @@
 
             label = "DEL_L";
         };
+
+        shift_home: shift_home {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(HOME)>;
+
+            label = "SHIFT_HOME";
+        };
+
+        shift_end: shift_end {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(END)>;
+
+            label = "SHIFT_END";
+        };
+
+        del_w_fwd: del_w_fwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(DELETE)>;
+
+            label = "DEL_W_FWD";
+        };
+
+        del_w_back: del_w_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(BACKSPACE)>;
+
+            label = "DEL_W_BACK";
+        };
+
+        srch_s_fwd: srch_s_fwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(F) &kp F3>;
+
+            label = "SRCH_S_FWD";
+        };
+
+        srch_s_back: srch_s_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(F) &kp LS(F3)>;
+
+            label = "SRCH_S_BACK";
+        };
+
+        jmp_w_fwd: jmp_w_fwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(RIGHT)>;
+
+            label = "JMP_W_FWD";
+        };
+
+        jmp_w_back: jmp_w_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(LEFT)>;
+
+            label = "JMP_W_BACK";
+        };
+
+        sel_w_fwd: sel_w_fwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(LS(RIGHT))>;
+
+            label = "SEL_W_FWD";
+        };
+
+        sel_w_back: sel_w_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(LS(LEFT))>;
+
+            label = "SEL_W_BACK";
+        };
     };
 
     keymap {
