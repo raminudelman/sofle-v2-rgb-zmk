@@ -56,14 +56,6 @@
             label = "STYL_TO_NRML";
         };
 
-        del_l: del_l {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp HOME &kp LS(END) &kp DELETE>;
-
-            label = "DEL_L";
-        };
-
         styl_to_note: styl_to_note {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -120,6 +112,14 @@
             bindings = <&macro_tap>, <&kp LS(INSERT)>;
 
             label = "PASTE";
+        };
+
+        del_l: del_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp HOME &kp LS(END) &kp DELETE>;
+
+            label = "DEL_L";
         };
     };
 
