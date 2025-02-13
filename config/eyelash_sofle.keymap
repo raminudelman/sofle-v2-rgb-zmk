@@ -284,7 +284,7 @@
 &kp TAB         &kp Q         &kp W     &kp E        &kp R           &kp T        &kp DOWN_ARROW   &kp Y          &kp U        &kp I      &kp O    &kp P            &kp BSLH
 &kp LEFT_SHIFT  &kp A         &kp S     &kp D        &kp F           &kp G        &kp LEFT_ARROW   &kp H          &kp J        &kp K      &kp L    &kp SEMI         &kp APOS
 &kp LCTRL       &kp Z         &kp X     &kp C        &kp V           &kp B        &kp RIGHT_ARROW  &kp N          &kp M        &kp COMMA  &kp DOT  &kp FSLH         &kp RCTRL
-&kp C_MUTE      &kp LEFT_ALT  &lt 3 F2  &lt 2 GRAVE  &lt 1 LEFT_GUI  &kp SPACE    &kp ENTER        &kp BACKSPACE  &lt 6 ENTER  &mo 4      &mo 7    &kp RIGHT_SHIFT
+&kp C_MUTE      &kp LEFT_ALT  &lt 3 F2  &lt 2 GRAVE  &lt 1 LEFT_GUI  &kp SPACE    &kp ENTER        &kp BACKSPACE  &lt 4 ENTER  &mo 5      &mo 6    &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -293,11 +293,11 @@
 
         layer_1 {
             bindings = <
-&kp TILDE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &del_l           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp TILDE   &styl_to_nrml  &styl_to_note  &styl_to_code  &fnt_to_code  &styl_to_hi_light    &mmv MOVE_UP     &none        &none               &none           &none          &none  &none
+&none       &del_w_back    &del_w_fwd     &kp END        &kp LS(HOME)  &kp LS(END)          &mmv MOVE_DOWN   &kp PG_UP    &kp LC(LEFT_ARROW)  &kp UP          &kp LC(RIGHT)  &none  &none
+&none       &kp HOME       &srch_s_back   &kp DEL        &srch_s_fwd   &none                &mmv MOVE_LEFT   &kp PG_DN    &kp LEFT            &kp DOWN        &kp RIGHT      &none  &none
+&none       &none          &del_l         &kp LC(X)      &kp LC(INS)   &kp LS(INSERT)       &mmv MOVE_RIGHT  &kp LC(F10)  &rgb_ug RGB_BRD     &kp LC(PERIOD)  &sel_w_fwd     &none  &none
+&kp C_MUTE  &none          &none          &none          &none         &none                &mkp LCLK        &none        &none               &none           &none          &none
             >;
 
             display-name = "L 1";
@@ -306,11 +306,11 @@
 
         layer_2 {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3     &kp F4  &kp F5    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans  &trans  &trans  &trans     &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &shw_desk  &trans  &trans    &mmv MOVE_LEFT   &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans     &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans     &trans  &trans    &mkp LCLK        &trans  &trans  &trans  &trans  &trans
+&none  &kp F1  &kp F2  &kp F3     &kp F4  &kp F5    &mmv MOVE_UP     &kp F6  &kp F7            &kp F8     &kp F9             &kp F10  &kp F11
+&none  &none   &none   &none      &none   &none     &mmv MOVE_DOWN   &none   &mv_win_mnt_left  &max_win   &mv_win_mnt_right  &none    &none
+&none  &none   &none   &shw_desk  &none   &none     &mmv MOVE_LEFT   &none   &snap_win_left    &win_mode  &snap_win_right    &none    &none
+&none  &none   &none   &none      &none   &none     &mmv MOVE_RIGHT  &none   &none             &none      &none              &none    &none
+&none  &none   &none   &none      &none   &none     &mkp LCLK        &none   &none             &none      &none              &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -319,35 +319,35 @@
 
         layer_3 {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
 
             label = "BT";
         };
 
-        layer_5 {
+        layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans                &trans                 &trans    &trans  &kp UNDERSCORE  &kp EQUAL  &kp ASTERISK  &kp SLASH  &trans      &trans
-&trans  &trans  &trans  &kp LBKT              &kp RBKT               &trans    &trans  &kp MINUS       &kp N7     &kp N8        &kp N9     &trans      &trans
-&trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans  &kp PLUS        &kp N4     &kp N5        &kp N6     &trans      &trans
-&trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans  &kp N0          &kp N1     &kp N2        &kp N3     &kp PERIOD  &trans
-&trans  &trans  &trans  &trans                &trans                 &trans    &trans  &trans          &trans     &trans        &trans     &trans
+&none  &none  &none  &none                 &none                  &none    &none  &kp UNDERSCORE  &kp EQUAL  &kp ASTERISK  &kp SLASH  &none       &none
+&none  &none  &none  &kp LBKT              &kp RBKT               &none    &none  &kp MINUS       &kp N7     &kp N8        &kp N9     &none       &none
+&none  &none  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none  &kp PLUS        &kp N4     &kp N5        &kp N6     &none       &none
+&none  &none  &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &none  &kp N0          &kp N1     &kp N2        &kp N3     &kp PERIOD  &none
+&none  &none  &none  &none                 &none                  &none    &none  &none           &none      &none         &none      &none
             >;
 
             label = "R1";
         };
 
-        layer_4 {
+        layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans       &trans    &trans      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PG_UP  &jmp_w_back  &kp UP    &jmp_w_fwd  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PG_DN  &kp LEFT     &kp DOWN  &kp RIGHT   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans       &trans    &trans      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans       &trans    &trans      &trans
+&none  &none  &none  &none  &none  &none    &none  &none      &none        &none     &none       &none  &none
+&none  &none  &none  &none  &none  &none    &none  &kp PG_UP  &jmp_w_back  &kp UP    &jmp_w_fwd  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &kp PG_DN  &kp LEFT     &kp DOWN  &kp RIGHT   &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none      &none        &none     &none       &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none      &none        &none     &none       &none
             >;
 
             label = "R2";
@@ -355,11 +355,11 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
 
             label = "R3";
@@ -367,11 +367,11 @@
 
         layer_7 {
             bindings = <
-&sys_reset      &bootloader   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader  &sys_reset
-&soft_off       &out OUT_BLE  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans       &soft_off
-&bt BT_CLR      &out OUT_USB  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans       &trans
-&bt BT_CLR_ALL  &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans       &trans
-&trans          &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&sys_reset      &bootloader   &none  &none  &none  &none    &none  &none  &none  &none  &none  &bootloader  &sys_reset
+&soft_off       &out OUT_BLE  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none        &soft_off
+&bt BT_CLR      &out OUT_USB  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none        &none
+&bt BT_CLR_ALL  &none         &none  &none  &none  &none    &none  &none  &none  &none  &none  &none        &none
+&none           &none         &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
 
             label = "Sys";
