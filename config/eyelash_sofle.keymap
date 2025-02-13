@@ -232,11 +232,11 @@
 
         Base {
             bindings = <
-&kp ESC         &kp N1        &kp N2    &kp N3       &kp N4          &kp N5       &kp UP_ARROW     &kp N6         &kp N7       &kp N8     &kp N9   &kp N0           &kp DELETE
+&kp ESC         &kp N1        &kp N2    &kp N3       &kp N4          &lt 7 N5     &kp UP_ARROW     &kp N6         &kp N7       &kp N8     &kp N9   &kp N0           &kp DELETE
 &kp TAB         &kp Q         &kp W     &kp E        &kp R           &kp T        &kp DOWN_ARROW   &kp Y          &kp U        &kp I      &kp O    &kp P            &kp BSLH
 &kp LEFT_SHIFT  &kp A         &kp S     &kp D        &kp F           &kp G        &kp LEFT_ARROW   &kp H          &kp J        &kp K      &kp L    &kp SEMI         &kp APOS
 &kp LCTRL       &kp Z         &kp X     &kp C        &kp V           &kp B        &kp RIGHT_ARROW  &kp N          &kp M        &kp COMMA  &kp DOT  &kp FSLH         &kp RCTRL
-&kp C_MUTE      &kp LEFT_ALT  &lt 3 F2  &lt 2 GRAVE  &lt 1 LEFT_GUI  &kp SPACE    &kp ENTER        &kp BACKSPACE  &lt 4 ENTER  &mo 4      &mo 2    &kp RIGHT_SHIFT
+&kp C_MUTE      &kp LEFT_ALT  &lt 3 F2  &lt 2 GRAVE  &lt 1 LEFT_GUI  &kp SPACE    &kp ENTER        &kp BACKSPACE  &lt 6 ENTER  &mo 4      &mo 7    &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -266,7 +266,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            label = "Layer 2";
+            label = "L2";
         };
 
         layer_3 {
@@ -278,29 +278,31 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "Layer 3";
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            label = "Layer 4";
+            label = "L3";
         };
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                &trans                 &trans    &trans  &kp EQUAL  &kp ASTERISK  &kp FSLH  &kp DOT  &trans  &trans
+&trans  &trans  &trans  &kp LBKT              &kp RBKT               &trans    &trans  &kp MINUS  &kp N7        &kp N8    &kp N9   &trans  &trans
+&trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans  &kp PLUS   &kp N4        &kp N5    &kp N6   &trans  &trans
+&trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans  &kp N0     &kp N1        &kp N2    &kp N3   &trans  &trans
+&trans  &trans  &trans  &trans                &trans                 &trans    &trans  &trans     &trans        &trans    &trans   &trans
             >;
+
+            label = "R1";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans       &trans    &trans      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PG_UP  &jmp_w_back  &kp UP    &jmp_w_fwd  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PG_DN  &kp LEFT     &kp DOWN  &kp RIGHT   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans       &trans    &trans      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans       &trans    &trans      &trans
+            >;
+
+            label = "R2";
         };
 
         layer_6 {
@@ -311,16 +313,20 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "R3";
         };
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&sys_reset      &bootloader   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader  &sys_reset
+&soft_off       &out OUT_BLE  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans       &soft_off
+&bt BT_CLR      &out OUT_USB  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans       &trans
+&bt BT_CLR_ALL  &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans       &trans
+&trans          &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "Sys";
         };
     };
 };
