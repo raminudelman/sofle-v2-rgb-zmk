@@ -245,7 +245,7 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
+&kp TILDE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
 &trans      &kp TILDE        &trans          &del_l           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
@@ -271,23 +271,23 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "L3";
+            label = "BT";
         };
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans                &trans                 &trans    &trans  &kp EQUAL  &kp ASTERISK  &kp FSLH  &kp DOT  &trans  &trans
-&trans  &trans  &trans  &kp LBKT              &kp RBKT               &trans    &trans  &kp MINUS  &kp N7        &kp N8    &kp N9   &trans  &trans
-&trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans  &kp PLUS   &kp N4        &kp N5    &kp N6   &trans  &trans
-&trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans  &kp N0     &kp N1        &kp N2    &kp N3   &trans  &trans
-&trans  &trans  &trans  &trans                &trans                 &trans    &trans  &trans     &trans        &trans    &trans   &trans
+&trans  &trans  &trans  &trans                &trans                 &trans    &trans  &kp UNDERSCORE  &kp EQUAL  &kp ASTERISK  &kp SLASH  &trans      &trans
+&trans  &trans  &trans  &kp LBKT              &kp RBKT               &trans    &trans  &kp MINUS       &kp N7     &kp N8        &kp N9     &trans      &trans
+&trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans  &kp PLUS        &kp N4     &kp N5        &kp N6     &trans      &trans
+&trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans  &kp N0          &kp N1     &kp N2        &kp N3     &kp PERIOD  &trans
+&trans  &trans  &trans  &trans                &trans                 &trans    &trans  &trans          &trans     &trans        &trans     &trans
             >;
 
             label = "R1";
