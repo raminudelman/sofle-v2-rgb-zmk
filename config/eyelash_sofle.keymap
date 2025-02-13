@@ -201,6 +201,30 @@
 
             label = "SEL_W_BACK";
         };
+
+        ctrl_f10: ctrl_f10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(F10)>;
+
+            label = "CTRL_F10";
+        };
+
+        ctrl_dot: ctrl_dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(PERIOD)>;
+
+            label = "CTRL_DOT";
+        };
+
+        shw_desk: shw_desk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LG(D)>;
+
+            label = "SHW_DESK";
+        };
     };
 
     keymap {
