@@ -54,7 +54,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
-  - {t: F2, h: L3}
+  - {t: F2, h: BT}
   - {t: '`', h: L2, s: '~'}
   - {t: '$$mdi:apple-keyboard-command$$', h: L 1}
   - $$mdi:keyboard-space$$
@@ -65,7 +65,7 @@ layers:
   - Sys
   - $$mdi:apple-keyboard-shift$$
   L 1:
-  - {t: '`', s: '~'}
+  - '~'
   - F1
   - F2
   - F3
@@ -194,10 +194,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  L3:
+  BT:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -267,10 +267,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - _
   - {t: '=', s: +}
   - '*'
   - {t: /, s: '?'}
-  - {t: ., s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -310,7 +310,7 @@ layers:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - .
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
