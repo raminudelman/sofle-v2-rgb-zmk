@@ -292,11 +292,11 @@
 
         layer_1 {
             bindings = <
-&kp TILDE   &styl_to_nrml  &styl_to_note  &styl_to_code  &fnt_to_code  &styl_to_hi_light    &mmv MOVE_UP     &none        &none               &none           &none          &none  &none
-&none       &del_w_back    &del_w_fwd     &kp END        &kp LS(HOME)  &kp LS(END)          &mmv MOVE_DOWN   &kp PG_UP    &kp LC(LEFT_ARROW)  &kp UP          &kp LC(RIGHT)  &none  &none
-&none       &kp HOME       &srch_s_back   &kp DEL        &srch_s_fwd   &none                &mmv MOVE_LEFT   &kp PG_DN    &kp LEFT            &kp DOWN        &kp RIGHT      &none  &none
-&none       &none          &del_l         &kp LC(X)      &kp LC(INS)   &kp LS(INSERT)       &mmv MOVE_RIGHT  &kp LC(F10)  &sel_w_back         &kp LC(PERIOD)  &sel_w_fwd     &none  &none
-&kp C_MUTE  &none          &none          &none          &none         &none                &mkp LCLK        &none        &none               &none           &none          &none
+&kp TILDE      &styl_to_nrml  &styl_to_note  &styl_to_code  &fnt_to_code  &styl_to_hi_light    &mmv MOVE_UP     &none        &none               &none           &none          &none  &none
+&kp LG(SPACE)  &del_w_back    &del_w_fwd     &kp END        &kp LS(HOME)  &kp LS(END)          &mmv MOVE_DOWN   &kp PG_UP    &kp LC(LEFT_ARROW)  &kp UP          &kp LC(RIGHT)  &none  &none
+&none          &kp HOME       &srch_s_back   &kp DEL        &srch_s_fwd   &none                &mmv MOVE_LEFT   &kp PG_DN    &kp LEFT            &kp DOWN        &kp RIGHT      &none  &none
+&none          &none          &del_l         &kp LC(X)      &kp LC(INS)   &kp LS(INSERT)       &mmv MOVE_RIGHT  &kp LC(F10)  &sel_w_back         &kp LC(PERIOD)  &sel_w_fwd     &none  &none
+&kp C_MUTE     &none          &none          &none          &none         &none                &mkp LCLK        &none        &none               &none           &none          &none
             >;
 
             display-name = "L 1";
