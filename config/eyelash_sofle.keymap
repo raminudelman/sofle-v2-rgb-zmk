@@ -279,11 +279,11 @@
 
         Base {
             bindings = <
-&kp ESC         &kp N1            &kp N2    &kp N3       &kp N4          &lt 7 N5     &kp UP_ARROW     &kp N6         &kp N7       &kp N8     &kp N9   &kp N0             &kp DELETE
+&kp ESC         &kp N1            &kp N2    &kp N3       &kp N4          &lt 7 N5     &kp UP_ARROW     &kp N6         &kp N7       &kp N8     &kp N9   &kp N0             &kp MINUS
 &kp TAB         &kp Q             &kp W     &kp E        &kp R           &kp T        &kp DOWN_ARROW   &kp Y          &kp U        &kp I      &kp O    &kp P              &kp BSLH
 &kp LEFT_ALT    &kp A             &kp S     &kp D        &kp F           &kp G        &kp LEFT_ARROW   &kp H          &kp J        &kp K      &kp L    &kp SEMI           &kp APOS
 &kp LEFT_SHIFT  &kp Z             &kp X     &kp C        &kp V           &kp B        &kp RIGHT_ARROW  &kp N          &kp M        &kp COMMA  &kp DOT  &kp FSLH           &kp RIGHT_SHIFT
-&kp C_MUTE      &kp LEFT_CONTROL  &lt 3 F2  &lt 2 GRAVE  &lt 1 LEFT_GUI  &kp SPACE    &kp ENTER        &kp BACKSPACE  &lt 4 ENTER  &mo 5      &mo 6    &kp RIGHT_CONTROL
+&kp C_MUTE      &kp LEFT_CONTROL  &lt 3 F2  &lt 5 GRAVE  &lt 1 LEFT_GUI  &kp SPACE    &kp ENTER        &kp BACKSPACE  &lt 4 ENTER  &mo 5      &mo 6    &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -305,11 +305,11 @@
 
         layer_2 {
             bindings = <
-&none  &kp F1  &kp F2  &kp F3     &kp F4  &kp F5    &mmv MOVE_UP     &kp F6  &kp F7            &kp F8     &kp F9             &kp F10  &kp F11
-&none  &none   &none   &none      &none   &none     &mmv MOVE_DOWN   &none   &mv_win_mnt_left  &max_win   &mv_win_mnt_right  &none    &none
-&none  &none   &none   &shw_desk  &none   &none     &mmv MOVE_LEFT   &none   &snap_win_left    &win_mode  &snap_win_right    &none    &none
-&none  &none   &none   &none      &none   &none     &mmv MOVE_RIGHT  &none   &none             &none      &none              &none    &none
-&none  &none   &none   &none      &none   &none     &mkp LCLK        &none   &none             &none      &none              &none
+&none  &none  &none  &none  &none  &none    &mmv MOVE_UP     &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &mmv MOVE_DOWN   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &mmv MOVE_LEFT   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &mmv MOVE_RIGHT  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &mkp LCLK        &none  &none  &none  &none  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -330,11 +330,11 @@
 
         layer_4 {
             bindings = <
-&none  &none  &none  &none                 &none                  &none    &none  &kp UNDERSCORE  &kp EQUAL  &kp ASTERISK  &kp SLASH  &none       &none
-&none  &none  &none  &kp LBKT              &kp RBKT               &none    &none  &kp MINUS       &kp N7     &kp N8        &kp N9     &none       &none
-&none  &none  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none  &kp PLUS        &kp N4     &kp N5        &kp N6     &none       &none
-&none  &none  &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &none  &kp N0          &kp N1     &kp N2        &kp N3     &kp PERIOD  &none
-&none  &none  &none  &none                 &none                  &none    &none  &none           &none      &none         &none      &none
+&none  &none  &none  &none                 &none                  &none    &none  &kp EQUAL     &kp N7  &kp N8   &kp N9  &none  &none
+&none  &none  &none  &kp LBKT              &kp RBKT               &none    &none  &kp FSLH      &kp N4  &kp N5   &kp N6  &none  &none
+&none  &none  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none  &kp ASTERISK  &kp N1  &kp N2   &kp N3  &none  &none
+&none  &none  &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &none  &kp PLUS      &kp N0  &kp DOT  &none   &none  &none
+&none  &none  &none  &none                 &none                  &none    &none  &none         &none   &none    &none   &none
             >;
 
             label = "R1";
@@ -353,15 +353,16 @@
         };
 
         layer_6 {
+            label = "R3";
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &kp F1  &kp F2  &kp F3     &kp F4  &kp F5    &mmv MOVE_UP     &kp F6  &kp F7            &kp F8     &kp F9             &kp F10  &kp F11
+&none  &none   &none   &none      &none   &none     &mmv MOVE_DOWN   &none   &mv_win_mnt_left  &max_win   &mv_win_mnt_right  &none    &none
+&none  &none   &none   &shw_desk  &none   &none     &mmv MOVE_LEFT   &none   &snap_win_left    &win_mode  &snap_win_right    &none    &none
+&none  &none   &none   &none      &none   &none     &mmv MOVE_RIGHT  &none   &none             &none      &none              &none    &none
+&none  &none   &none   &none      &none   &none     &mkp LCLK        &none   &none             &none      &none              &none
             >;
 
-            label = "R3";
+            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_7 {
