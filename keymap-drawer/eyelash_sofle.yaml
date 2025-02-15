@@ -26,7 +26,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
   - A
   - S
   - D
@@ -39,7 +39,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - .
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -51,9 +51,9 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - {t: F2, h: BT}
   - {t: '`', h: L2, s: '~'}
   - {t: '$$mdi:apple-keyboard-command$$', h: L 1}
@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: R1}
   - R2
   - R3
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   L 1:
   - '~'
   - '&styl_to_nrml'
