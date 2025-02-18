@@ -292,11 +292,11 @@
 
         layer_1 {
             bindings = <
-&kp TILDE         &styl_to_nrml  &styl_to_note  &styl_to_code   &fnt_to_code  &styl_to_hi_light    &mmv MOVE_UP     &none        &none          &none               &none         &none                &none
-&kp LG(SPACE)     &del_w_back    &del_w_fwd     &kp END         &kp LS(HOME)  &kp LS(END)          &mmv MOVE_DOWN   &kp LC(F10)  &kp PAGE_UP    &kp LC(LEFT_ARROW)  &kp UP_ARROW  &kp LC(RIGHT_ARROW)  &none
-&kp LEFT_SHIFT    &kp HOME       &srch_s_back   &kp DEL         &srch_s_fwd   &kp RS(PAGE_UP)      &mmv MOVE_LEFT   &none        &kp PAGE_DOWN  &kp LEFT            &kp DOWN      &kp RIGHT_ARROW      &none
-&kp LEFT_CONTROL  &del_l         &kp LC(X)      &kp LC(INSERT)  &kp LS(INS)   &kp PAGE_DOWN        &mmv MOVE_RIGHT  &none        &none          &sel_w_back         &sel_w_fwd    &none                &none
-&kp C_MUTE        &none          &none          &none           &none         &none                &mkp LCLK        &none        &none          &none               &none         &none
+&kp TILDE         &styl_to_nrml  &styl_to_note  &styl_to_code   &fnt_to_code  &styl_to_hi_light    &mmv MOVE_UP     &kp PRINTSCREEN  &none          &none               &none         &none                &none
+&kp LG(SPACE)     &del_w_back    &del_w_fwd     &kp END         &kp LS(HOME)  &kp LS(END)          &mmv MOVE_DOWN   &kp LC(F10)      &kp PAGE_UP    &kp LC(LEFT_ARROW)  &kp UP_ARROW  &kp LC(RIGHT_ARROW)  &none
+&kp LEFT_SHIFT    &kp HOME       &srch_s_back   &kp DEL         &srch_s_fwd   &kp RS(PAGE_UP)      &mmv MOVE_LEFT   &none            &kp PAGE_DOWN  &kp LEFT            &kp DOWN      &kp RIGHT_ARROW      &none
+&kp LEFT_CONTROL  &del_l         &kp LC(X)      &kp LC(INSERT)  &kp LS(INS)   &kp PAGE_DOWN        &mmv MOVE_RIGHT  &none            &none          &sel_w_back         &sel_w_fwd    &none                &none
+&kp C_MUTE        &none          &none          &none           &none         &none                &mkp LCLK        &none            &none          &none               &none         &none
             >;
 
             display-name = "L 1";
