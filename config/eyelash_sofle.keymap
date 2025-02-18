@@ -279,11 +279,11 @@
 
         Base {
             bindings = <
-&kp ESC         &kp N1    &kp N2       &kp N3            &kp N4          &lt 7 N5     &kp UP_ARROW     &kp N6         &kp N7       &kp N8     &kp N9   &kp N0             &kp MINUS
-&kp TAB         &kp Q     &kp W        &kp E             &kp R           &kp T        &kp DOWN_ARROW   &kp Y          &kp U        &kp I      &kp O    &kp P              &kp BSLH
-&kp LEFT_ALT    &kp A     &kp S        &kp D             &kp F           &kp G        &kp LEFT_ARROW   &kp H          &kp J        &kp K      &kp L    &kp SEMI           &kp APOS
-&kp LEFT_SHIFT  &kp Z     &kp X        &kp C             &kp V           &kp B        &kp RIGHT_ARROW  &kp N          &kp M        &kp COMMA  &kp DOT  &kp FSLH           &kp RIGHT_SHIFT
-&kp C_MUTE      &lt 2 F2  &lt 3 GRAVE  &kp LEFT_CONTROL  &lt 1 LEFT_GUI  &kp SPACE    &kp ENTER        &kp BACKSPACE  &lt 4 ENTER  &mo 5      &mo 6    &kp RIGHT_CONTROL
+&kp ESC         &kp N1        &kp N2       &kp N3            &kp N4          &lt 7 N5     &kp UP_ARROW     &kp N6     &kp N7           &kp N8             &kp N9   &kp N0    &kp MINUS
+&kp TAB         &kp Q         &kp W        &kp E             &kp R           &kp T        &kp DOWN_ARROW   &kp Y      &kp U            &kp I              &kp O    &kp P     &kp BSLH
+&kp F2          &kp A         &kp S        &kp D             &kp F           &kp G        &kp LEFT_ARROW   &kp H      &kp J            &kp K              &kp L    &kp SEMI  &kp APOS
+&kp LEFT_SHIFT  &kp Z         &kp X        &kp C             &kp V           &kp B        &kp RIGHT_ARROW  &kp N      &kp M            &kp COMMA          &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+&kp C_MUTE      &kp LEFT_ALT  &lt 2 GRAVE  &kp LEFT_CONTROL  &lt 1 LEFT_GUI  &kp SPACE    &kp ENTER        &kp ENTER  &lt 4 BACKSPACE  &kp RIGHT_CONTROL  &mo 5    &mo 6
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -305,19 +305,6 @@
 
         layer_2 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &mmv MOVE_UP     &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &mmv MOVE_DOWN   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &mmv MOVE_LEFT   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &mmv MOVE_RIGHT  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &mkp LCLK        &none  &none  &none  &none  &none
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-            label = "L2";
-        };
-
-        layer_3 {
-            bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
 &none  &none         &none         &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
 &none  &none         &none         &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
@@ -326,6 +313,19 @@
             >;
 
             label = "BT";
+        };
+
+        layer_3 {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &mmv MOVE_UP     &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &mmv MOVE_DOWN   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &mmv MOVE_LEFT   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &mmv MOVE_RIGHT  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &mkp LCLK        &none  &none  &none  &none  &none
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+            label = "L3";
         };
 
         layer_4 {
@@ -342,11 +342,11 @@
 
         layer_5 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none      &none        &none     &none       &none  &none
-&none  &none  &none  &none  &none  &none    &none  &kp PG_UP  &jmp_w_back  &kp UP    &jmp_w_fwd  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &kp PG_DN  &kp LEFT     &kp DOWN  &kp RIGHT   &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none      &none        &none     &none       &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none      &none        &none     &none       &none
+&none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &none  &kp F6     &kp F7       &kp F8    &kp F9      &kp F10  &kp F11
+&none  &none   &none   &none   &none   &none     &none  &kp PG_UP  &jmp_w_back  &kp UP    &jmp_w_fwd  &none    &none
+&none  &none   &none   &none   &none   &none     &none  &kp PG_DN  &kp LEFT     &kp DOWN  &kp RIGHT   &none    &none
+&none  &none   &none   &none   &none   &none     &none  &none      &none        &none     &none       &none    &none
+&none  &none   &none   &none   &none   &none     &none  &none      &none        &none     &none       &none
             >;
 
             label = "R2";
@@ -355,11 +355,11 @@
         layer_6 {
             label = "R3";
             bindings = <
-&none  &kp F1  &kp F2  &kp F3     &kp F4  &kp F5    &mmv MOVE_UP     &kp F6  &kp F7            &kp F8     &kp F9             &kp F10  &kp F11
-&none  &none   &none   &none      &none   &none     &mmv MOVE_DOWN   &none   &mv_win_mnt_left  &max_win   &mv_win_mnt_right  &none    &none
-&none  &none   &none   &shw_desk  &none   &none     &mmv MOVE_LEFT   &none   &snap_win_left    &win_mode  &snap_win_right    &none    &none
-&none  &none   &none   &none      &none   &none     &mmv MOVE_RIGHT  &none   &none             &none      &none              &none    &none
-&none  &none   &none   &none      &none   &none     &mkp LCLK        &none   &none             &none      &none              &none
+&none  &none             &none      &none              &none  &none    &mmv MOVE_UP     &none  &none  &none  &none  &none  &none
+&none  &mv_win_mnt_left  &max_win   &mv_win_mnt_right  &none  &none    &mmv MOVE_DOWN   &none  &none  &none  &none  &none  &none
+&none  &snap_win_left    &win_mode  &snap_win_right    &none  &none    &mmv MOVE_LEFT   &none  &none  &none  &none  &none  &none
+&none  &none             &none      &none              &none  &none    &mmv MOVE_RIGHT  &none  &none  &none  &none  &none  &none
+&none  &none             &none      &none              &none  &none    &mkp LCLK        &none  &none  &none  &none  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
