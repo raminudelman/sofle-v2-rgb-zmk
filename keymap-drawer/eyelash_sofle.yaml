@@ -73,10 +73,10 @@ layers:
   - '&styl_to_hi_light'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - PRINTSCREEN
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+F10
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PRINTSCREEN
   - '&del_w_back'
