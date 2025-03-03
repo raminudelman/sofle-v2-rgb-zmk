@@ -96,7 +96,7 @@ layers:
   - '&srch_s_back'
   - $$mdi:backspace-reverse-outline$$
   - '&srch_s_fwd'
-  - Sft+PgUp
+  - PgUp
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PgDn
