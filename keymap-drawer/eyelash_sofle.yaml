@@ -59,8 +59,8 @@ layers:
   - {t: '$$mdi:apple-keyboard-command$$', h: L 1}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: R1}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', h: R1}
   - $$mdi:apple-keyboard-control$$
   - R2
   - R3
