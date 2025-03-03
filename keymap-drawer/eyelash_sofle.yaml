@@ -484,13 +484,13 @@ layers:
   - $$mdi:bluetooth-off$$
   - OUT USB
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&studio_unlock'
   - RGB COLOR HSB(0,0,100)
   - RGB TOG
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB TOG
   - RGB COLOR HSB(0,0,100)
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&studio_unlock'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
