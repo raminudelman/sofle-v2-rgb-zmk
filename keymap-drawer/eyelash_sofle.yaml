@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - {t: '`', s: '~'}
+  - {t: '`', h: '$$mdi:apple-keyboard-shift$$', s: '~'}
   - A
   - S
   - D
@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - .
-  - {t: F2, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F2, h: '$$mdi:apple-keyboard-control$$'}
   - Z
   - X
   - C
@@ -54,9 +54,9 @@ layers:
   - {t: /, s: '?'}
   - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
   - $$mdi:volume-off$$
-  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: Ctl+INS, h: BT}
-  - {t: Sft+INS, h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:apple-keyboard-option$$
+  - BT
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: L 1}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
