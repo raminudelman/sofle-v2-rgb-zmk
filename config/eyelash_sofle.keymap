@@ -5,8 +5,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 /*
@@ -280,11 +278,11 @@
 
         Base {
             bindings = <
-&kp ESC         &kp N1        &kp N2       &kp N3            &kp N4          &lt 7 N5     &kp UP_ARROW     &lt 7 NUMBER_6  &kp N7       &kp N8             &kp N9   &kp N0    &kp MINUS
-&kp TAB         &kp Q         &kp W        &kp E             &kp R           &kp T        &kp DOWN_ARROW   &kp Y           &kp U        &kp I              &kp O    &kp P     &kp BSLH
-&kp F2          &kp A         &kp S        &kp D             &kp F           &kp G        &kp LEFT_ARROW   &kp H           &kp J        &kp K              &kp L    &kp SEMI  &kp APOS
-&kp LEFT_SHIFT  &kp Z         &kp X        &kp C             &kp V           &kp B        &kp RIGHT_ARROW  &kp N           &kp M        &kp COMMA          &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-&kp C_MUTE      &kp LEFT_ALT  &lt 2 GRAVE  &kp LEFT_CONTROL  &lt 1 LEFT_GUI  &kp SPACE    &kp ENTER        &kp BACKSPACE   &lt 4 ENTER  &kp RIGHT_CONTROL  &mo 5    &mo 6
+&kp ESC            &kp N1                 &kp N2       &kp N3            &kp N4          &lt 7 N5     &kp UP_ARROW     &lt 7 NUMBER_6  &kp N7       &kp N8             &kp N9              &kp N0               &kp MINUS
+&kp TAB            &kp Q                  &kp W        &kp E             &kp R           &kp T        &kp DOWN_ARROW   &kp Y           &kp U        &kp I              &kp O               &kp P                &kp BSLH
+&kp GRAVE          &kp A                  &kp S        &kp D             &kp F           &kp G        &kp LEFT_ARROW   &kp H           &kp J        &kp K              &kp L               &kp SEMI             &kp APOS
+&mt LEFT_SHIFT F2  &kp Z                  &kp X        &kp C             &kp V           &kp B        &kp RIGHT_ARROW  &kp N           &kp M        &kp COMMA          &kp DOT             &kp FSLH             &mt RIGHT_SHIFT EQUAL
+&kp C_MUTE         &mt LEFT_ALT LEFT_GUI  &lt 2 GRAVE  &kp LEFT_CONTROL  &lt 1 LEFT_GUI  &kp SPACE    &kp ENTER        &kp BACKSPACE   &lt 4 ENTER  &kp RIGHT_CONTROL  &lt 5 LEFT_BRACKET  &lt 6 RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
