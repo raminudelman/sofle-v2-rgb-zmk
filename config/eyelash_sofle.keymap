@@ -329,11 +329,11 @@
 
         layer_4 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &kp EQUAL     &kp N7  &kp N8   &kp N9  &kp LEFT_BRACE    &kp RIGHT_BRACE
-&none  &none  &none  &none  &none  &none    &none  &kp FSLH      &kp N4  &kp N5   &kp N6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none  &none  &none  &none  &none  &none    &none  &kp ASTERISK  &kp N1  &kp N2   &kp N3  &none             &none
-&none  &none  &none  &none  &none  &none    &none  &kp PLUS      &kp N0  &kp DOT  &none   &none             &none
-&none  &none  &none  &none  &none  &none    &none  &none         &none   &none    &none   &none
+&none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &none  &kp F6        &kp F7  &kp F8  &kp F9   &kp F10         &kp F11
+&none  &none   &none   &none   &none   &none     &none  &kp EQUAL     &kp N7  &kp N8  &kp N9   &kp LEFT_BRACE  &kp RIGHT_BRACE
+&none  &none   &none   &none   &none   &none     &none  &kp ASTERISK  &kp N4  &kp N5  &kp N6   &kp LBKT        &kp RBKT
+&none  &none   &none   &none   &none   &none     &none  &kp PLUS      &kp N1  &kp N2  &kp N3   &none           &none
+&none  &none   &none   &none   &none   &none     &none  &none         &none   &kp N0  &kp DOT  &none
             >;
 
             label = "R1";
