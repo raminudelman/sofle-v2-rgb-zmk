@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: eyelash_sofle}
 layers:
   Base:
   - $$mdi:keyboard-esc$$
@@ -26,7 +27,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - F2
+  - {t: '`', s: '~'}
   - A
   - S
   - D
@@ -39,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - .
-  - $$mdi:apple-keyboard-shift$$
+  - {t: F2, h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
@@ -51,9 +52,9 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '`', h: BT, s: '~'}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:apple-keyboard-command$$', h: L 1}
@@ -62,8 +63,8 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: R1}
   - $$mdi:apple-keyboard-control$$
-  - R2
-  - R3
+  - {t: '[', h: R2, s: '{'}
+  - {t: ']', h: R3, s: '}'}
   L 1:
   - '~'
   - '&styl_to_nrml'
