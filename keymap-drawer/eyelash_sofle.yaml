@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - {t: '`', h: '$$mdi:apple-keyboard-shift$$', s: '~'}
+  - {t: F2, h: '$$mdi:apple-keyboard-shift$$'}
   - A
   - S
   - D
@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - .
-  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
+  - {t: '`', h: '$$mdi:apple-keyboard-control$$', s: '~'}
   - Z
   - X
   - C
@@ -54,7 +54,7 @@ layers:
   - {t: /, s: '?'}
   - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
   - $$mdi:volume-off$$
-  - {t: F2, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-return$$', h: L 1}
